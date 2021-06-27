@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Boost</title>
+  <style type="text/css">
+    body {color: black}
+    body {font-family: cursive; }
+    body {text-align: center;}
+    body {background-image: url(https://ddhk.org/wp-content/uploads/2020/11/Menjaga-Tujuh-Anggota-Badan-dari-Api-Neraka-696x464.jpg); background-size: cover;}
+  </style>
+<style type='text/css'>
+button{
+    border: double;
+    padding: 15px 115px;
+    border-radius: 150px;
+   font-family:cursive;
+    color: darkred;
+    display: table-caption;
+    cursor: pointer;
+    text-decoration: none;
+    align-self: flex-start;
+}
+  
+ </style>
+</head>
+<body class>
+  <h1>YAUMUL HISAB</h1>
+  <h1>SEMUA AMAL ANDA AKAN DIHISAB</h1>
+  <div class="row">
+    <div class="col-lg text-align kotak">
+      <center>
+      <button type="button" Id="btn">HISAB</button></center>
+      <script type="text/javascript" src="dist/sweetalert2.all.min.js"></script>
+      <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger'
+  },
+  buttonsStyling: false
+})
+
+swalWithBootstrapButtons.fire({
+  title: 'HISAB',
+  text: "Dosa anda terlalu banyak, apakah anda mau masuk neraka?",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonText: 'YA',
+  cancelButtonText: 'TIDAK',
+  reverseButtons: true
+}).then((result) => {
+  if (result.isConfirmed) {
+    swalWithBootstrapButtons.fire(
+    'NERAKA',
+    'Selamat anda masuk neraka, anda akan di siksa, dibakar, di suruh minum air mendidih, di tusuk, di sengat kalajengking, tubuhkan akan hancur, sehari di neraka samadengan 1000 tahun di dunia', 'warning',
+    )
+  } else if (
+    /* Read more about handling dismissals below */
+    result.dismiss === Swal.DismissReason.cancel
+  ) {
+    swalWithBootstrapButtons.fire(
+      'NERAKA',
+      'Dosa anda terlalu banyak, anda tetap akan masuk neraka, anda akan di siksa, dibakar, di suruh minum air mendidih, di tusuk, di sengat kalajengking, tubuhkan akan hancur, sehari di neraka samadengan 1000 tahun di dunia, TOBATLAH!!',
+      'warning'
+    )
+  }
+})
+
+        })
+      </script>
+<script type="text/javascript">
+</script>
+<audio>
+  <source src="" type="">
+</audio>
+</body>
+</html>
